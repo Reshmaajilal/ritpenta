@@ -52,7 +52,8 @@ $message=array(
     <?php
 
 
-    $stmnt=" SELECT * FROM `nss_vol_reg` v LEFT JOIN  stud_details d ON v.admnno = d.admissionno   WHERE v.vol_id = :id ";
+   // =" SELECT * FROM `nss_vol_reg` v LEFT JOIN  stud_details d ON v.admnno = d.admissionno   WHERE v.vol_id = :id ";
+   $stmnt ="SELECT v.*,s.*,c.* FROM nss_vol_reg v,stud_details s,class_details c, current_class d WHERE s.admissionno =v.admnno AND c.classid= d.classid AND s.admissionno= d.studid AND v.vol_id = :id ";
 
     $params = array (
       ':id' => $id

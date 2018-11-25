@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#divform{
+margin:10px auto;
+max-width: none;
+padding: 0px 12px 10px 20px;
+font-family:"Times New Roman", Times, serif;
+font-size:20px;
+}
+#divform.form-style-1 li {
+padding: 0;
+display: block;
+list-style: none;
+margin: 10px 0 0 0;
+}
+#divform.form-style-1 label{
+margin:0 0 3px 0;
+padding:0px;
+display:block;
+font-weight: bold;
+}
+#divform.form-style-1 input[type=text],
+/*.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],*/
+#divform.form-style-1 textarea,
+select{
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+border:1px solid #BEBEBE;
+padding: 7px;
+margin:0px;
+-webkit-transition: all 0.30s ease-in-out;
+-moz-transition: all 0.30s ease-in-out;
+-ms-transition: all 0.30s ease-in-out;
+-o-transition: all 0.30s ease-in-out;
+outline: none;
+}
+#divform.form-style-1 input[type=text]:focus,
+#divform.form-style-1 textarea:focus,
+#divform.form-style-1 select:focus{
+-moz-box-shadow: 0 0 8px #88D5E9;
+-webkit-box-shadow: 0 0 8px #88D5E9;
+box-shadow: 0 0 8px #88D5E9;
+border: 1px solid #88D5E9;
+}
+#divform.form-style-1 .field-divided{
+width: 100%;
+}
+#divform.form-style-1 .field-long{
+width: 100%;
+}
+#divform.form-style-1 .field-select{
+width: 100%;
+}
+#divform.form-style-1 .field-textarea{
+height: 100px;
+}
+#divform.form-style-1 input[type=submit]{
+background: #4B99AD;
+padding: 8px 15px 8px 15px;
+border: none;
+color: #fff;
+width:300px;
+}
+#divform.form-style-1 input[type=submit]:hover{
+background: #4691A4;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+}
+#divform.form-style-1 .required{
+color:red;
+}
+
+
+
+#outer1
+{
+	text-align: left;
+	
+  line-height: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #ed1c40;
+  width: auto;
+  /*margin: 50px auto;*/
+  border-radius: .25rem;
+	
+	
+}
+#outer1 thead tr:first-child {
+  background: #ed1c40;
+  color: #fff;
+  border: none;
+}
+
+
+
+#outer1 tbody tr:hover {
+  background-color: rgba(237, 28, 64, .1);
+  cursor: default;
+}
+#outer1
+{
+	text-align: left;
+	
+  line-height: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #ed1c40;
+  width: 700px;
+  /*margin: 50px auto;*/
+  border-radius: .25rem;
+	
+	
+}
+#outer1 thead tr:first-child {
+  background: #ed1c40;
+  color: #fff;
+  border: none;
+}
+
+
+
+#outer1 tbody tr:hover {
+  background-color: rgba(237, 28, 64, .1);
+  cursor: default;
+}
+
+#divpop .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+#divpop #myPopup .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+#divpop #myPopup .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+#divpop .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

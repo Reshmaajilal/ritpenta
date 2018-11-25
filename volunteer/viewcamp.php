@@ -96,6 +96,7 @@ $data = selectFromTable('*' , 'nss_camp_reg ' , '  cp_delete = 0 ', $db);
 											<a title="Add" href="volunteer/campparticipant/<?php echo indexMe((int)isit('cp_id', $value, 0)); ?>" class="btn btn-sm btn-primary ">
 												<i class="fas fa-user-plus"></i>
 											</a>
+											
 										</td>
 									</tr>
 

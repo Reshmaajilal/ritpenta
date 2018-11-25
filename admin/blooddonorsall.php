@@ -1,11 +1,5 @@
 <?php
 
-/**
- * @Author: indran
- * @Date:   2018-11-22 06:42:46
- * @Last Modified by:   indran
- * @Last Modified time: 2018-11-22 07:16:39
- */ 
 
 include_once('includes/header.php'); ?>
 
@@ -18,7 +12,7 @@ $reqGruop =  isit('group', $_GET);
 if ($reqGruop) {
 	$reqGruop = strtolower($reqGruop); 
 	$reqGruop = trim($reqGruop);
-	$ggRios = array('a+', 'a-');
+	$ggRios = array('a+', 'a-','b+','b-','o+','o-','ab+','ab-');
 
 
 	if (!in_array($reqGruop, $ggRios)) {
@@ -76,15 +70,15 @@ if ($reqGruop && $reqGruop != '' ) {
 			<div class="col-sm-12 ">
 
 
-				<h1 class="h3 mb-3 font-weight-normal text-dark text-center">blood donors Details 
+			<i>	<h1 class="h3 mb-3 font-weight-normal text-danger text-center">
 
 					<?php
 					if ($reqGruop && $reqGruop != '' ) {
 						echo strtoupper($reqGruop);
 					}
 
-					?>
-				</h1>
+					?>  Blood Donors 
+				</h1></i>
 
 
 				<div class="table-responsive">

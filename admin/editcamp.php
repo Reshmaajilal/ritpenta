@@ -62,6 +62,10 @@ if(isset($_POST['submit-btn'])){
 	$cp_coordinator_2 = $_POST['cp_coordinator_2'];
 
 
+   
+
+
+
 
 	if ($cp_coordinator_1  ==  $cp_coordinator_2) {
 
@@ -136,7 +140,7 @@ if(isset($_POST['submit-btn'])){
 				if ($result) {
 
 					$message [0] = 1;
-					$message [1] = ' camp and coordinators are added '; 
+					$message [1] = ' camp and coordinators are updated '; 
 				}
 
 
@@ -156,7 +160,7 @@ if(isset($_POST['submit-btn'])){
 
 
 			$message [0] = 2;
-			$message [1] = ' cmap not exists'; 
+			$message [1] = ' camp not exists'; 
 
 		}
 
@@ -171,6 +175,7 @@ if(isset($_POST['submit-btn'])){
 
 
 }
+
 
 
 

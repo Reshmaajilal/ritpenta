@@ -46,6 +46,23 @@ if (isset($_POST['make_delete'])) {
 $data = array();
 $data = selectFromTable('*' , 'nss_camp_reg ' , ' 1 ', $db);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
 
 
@@ -138,6 +155,8 @@ $data = selectFromTable('*' , 'nss_camp_reg ' , ' 1 ', $db);
 												
 													<i class="ti-pencil-alt"></i>
 												</a>
+												
+									</form>
 											</td>
 										</tr>
 

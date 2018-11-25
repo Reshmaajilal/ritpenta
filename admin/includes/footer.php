@@ -4,7 +4,7 @@
  * @Author: indran
  * @Date:   2018-10-17 16:49:19
  * @Last Modified by:   indran
- * @Last Modified time: 2018-11-24 15:12:53
+ * @Last Modified time: 2018-11-18 18:50:00
  */
 ?>
 
@@ -55,13 +55,6 @@
 		$('.select2').select2();
 		$('.dataTable').DataTable();
 		$("time.timeago").timeago(); 
-
-		
-
-
-
-
-
 
 		$("[data-parsley-validate]").parsley({
 			errorClass: 'has-danger',
@@ -236,6 +229,7 @@ $(document).on('submit', '#submit_me_image_upload', function(event) {
 		});
 	});
 	// console.log($image);
+
 
 
 });

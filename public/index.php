@@ -1,11 +1,5 @@
 <?php
 
-/**
- * @Author: indran
- * @Date:   2018-10-17 16:48:54
- * @Last Modified by:   indran
- * @Last Modified time: 2018-11-20 15:58:42
- */
 
 include_once('includes/header.php');
 ?>
@@ -46,20 +40,21 @@ if (isset($_POST['add-feedback'])) {
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
 
-  <!-- Wrapper for slides -->
+   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="images/col1.jpg" alt="New York" width="1200" height="700">   
+      <img src="images/col1.jpg" alt="New York">
     </div>
 
     <div class="item">
-      <img src="images/col2.jpg" alt="Chicago" width="1200" height="700">
+      <img src="images/col2.jpg" alt="Chicago">
+      
     </div>
 
     <div class="item">
-      <img src="images/col3.jpg" alt="Los Angeles" width="1200" height="500">
+      <img src="images/col3.jpg" alt="Los Angeles">
     </div>
-
+  </div>
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -73,81 +68,88 @@ if (isset($_POST['add-feedback'])) {
 
   <!-- Container (The Band Section) -->
   <div id="band" class="container text-center">
-    <h3>THE BAND</h3>
-    <p><em>We love music!</em></p>
-    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h1><strong>RIT NSS UNIT</strong></h1>
+    <em><h3 class="text-danger"><strong>Our Motto: Not Me But You !</strong></h3></em>
+    <p class="text-justify">The NSS has one unit bearing Unit No.158 involving strong contingent of 100 volunteers. NSS has started functioning in this institution from 1997 onwards. Our motto is ‘Not Me but You’. We aims at developing personality through community service. This unit is headed by the programme officer assisted by a lady staff coordinator and two volunteer secretary’s one each from boys and girls. NSS is assisted by an advisory board consisting of Principal and all HOD’s. It has an executive committee consisting of two student representative from each class.
+    Our activities  are divided into : 1) Regular activities 2) Special Camp activities. The regular activities include campus cleaning and beautification, orientation programme, community visit, tree plantation, educational programme, celebration of important days, service to public like road construction, awareness classes on the importance of blood donation, blood donation programme, measures for prevention of AIDS etc.,. NSS Unit organizes special camps with the help of local bodies. The seven day special camp includes Sramdhan, cultural programme in the selected ward of nearby Grama Panchayath. NSS also undertake socioeconomic and health survey in selected villages and remedial measures are suggested based on the data collected. It conducts cultural programmes and invited lectures on environmental and educational subjects. The NSS unit which has brought a cultural change in the campus spread RIT’s glory across the state through its noble activities. 
+          </p>
     <br>
     <div class="row">
       <div class="col-sm-4">
-        <p class="text-center"><strong>Name</strong></p><br>
+        <p class="text-center"><strong>Nanda Kishore</strong></p><br>
         <a href="#demo" data-toggle="collapse">
-          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+          <img src="images/po.png" class="img-circle person" alt="Random Name" width="255" height="255">
         </a>
         <div id="demo" class="collapse">
-          <p>Guitarist and Lead Vocalist</p>
-          <p>Loves long walks on the beach</p>
-          <p>Member since 1988</p>
+          <p>Programme Officer</p>
+          <p>Assistant Professor </p>
+          <p>Mechanical Department</p>
         </div>
       </div>
       <div class="col-sm-4">
-        <p class="text-center"><strong>Name</strong></p><br>
+        <p class="text-center"><strong>Lekshmi</strong></p><br>
         <a href="#demo2" data-toggle="collapse">
-          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+          <img src="images/voldy.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
         </a>
         <div id="demo2" class="collapse">
-          <p>Drummer</p>
-          <p>Loves drummin'</p>
-          <p>Member since 1988</p>
+          <p>Volunteer Secretary</p>
+          <p>S7 CE</p>
+          <p></p>
         </div>
       </div>
       <div class="col-sm-4">
-        <p class="text-center"><strong>Name</strong></p><br>
+        <p class="text-center"><strong>Ragesh</strong></p><br>
         <a href="#demo3" data-toggle="collapse">
-          <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+          <img src="images/vols.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
         </a>
         <div id="demo3" class="collapse">
-          <p>Bass player</p>
-          <p>Loves math</p>
-          <p>Member since 2005</p>
+          <p>Volunteer Secretary</p>
+          <p>S7 EEE</p>
+          <p></p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Container (TOUR Section) -->
-  <div id="tour" class="bg-1">
+  <div id="tour" class="bg-5">
     <div class="container">
-      <h3 class="text-center">TOUR DATES</h3>
-      <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+      <h3 class="text-center">SOME OF OUR PRESTIGIOUS PROJECTS</h3>
+
+
+
+      <!--<p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
       <ul class="list-group">
         <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
         <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
         <li class="list-group-item">November <span class="badge">3</span></li> 
-      </ul>
+      </ul>-->
 
       <div class="row text-center">
         <div class="col-sm-4">
           <div class="thumbnail">
-            <img src="paris.jpg" alt="Paris" width="400" height="300">
-            <p><strong>Paris</strong></p>
+            <img src="images/IMG-20180707-WA0028.jpg" alt="Paris" width="400" height="300" class="img-rounded">
+            <!--<p><strong>Paris</strong></p>
             <p>Friday 27 November 2015</p>
-            <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+            <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>-->
           </div>
         </div>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <img src="newyork.jpg" alt="New York" width="400" height="300">
-            <p><strong>New York</strong></p>
+            <img src="images/IMG-20180707-WA0024 (1).jpg" alt="New York" width="400" height="300" class="img-rounded">
+            <!--<p><strong>New York</strong></p>
             <p>Saturday 28 November 2015</p>
-            <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+            <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>-->
           </div>
         </div>
         <div class="col-sm-4">
           <div class="thumbnail">
-            <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-            <p><strong>San Francisco</strong></p>
+            <img src="images/IMG-20170616-WA0011.jpg" alt="San Francisco" width="400" height="300" class="img-rounded">
+
+
+           <!-- <p><strong>San Francisco</strong></p>
             <p>Sunday 29 November 2015</p>
-            <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+            <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>-->
           </div>
         </div>
       </div>
@@ -191,15 +193,15 @@ if (isset($_POST['add-feedback'])) {
 
   <!-- Container (Contact Section) -->
   <div id="contact" class="container">
-    <h3 class="text-center">Contact</h3>
-    <p class="text-center"><em>We love our fans!</em></p>
+    <h3 class="text-center">Feedback</h3>
+    <p class="text-center"><em>Need Help!</em></p>
 
     <div class="row">
       <div class="col-md-4">
         <p>Fan? Drop a note.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span>RIT NSS UNIT </p>
         <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-        <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>Email: ritpenta158@gmail.com</p>
       </div>
       <div class="col-md-8">
         <form class="form" method="post" action="" data-parsley-validate >
@@ -235,9 +237,9 @@ if (isset($_POST['add-feedback'])) {
   <br>
   <h3 class="text-center">From The Blog</h3>  
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
-    <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
-    <li><a data-toggle="tab" href="#menu2">Peter</a></li>
+    <li class="active"><a href="#" class="fa fa-facebook"></a></li>
+    <li><a href="#" class="fa fa-twitter"></a></li>
+    <li><a href="#" class="fa fa-instagram"></a></li>
   </ul>
 
   <div class="tab-content">
@@ -257,7 +259,8 @@ if (isset($_POST['add-feedback'])) {
 </div>
 
 <!-- Add Google Maps -->
-<div id="googleMap"></div>
+<img src="map.jpg" class="img-responsive" style="width:100%">
+
 
 
 

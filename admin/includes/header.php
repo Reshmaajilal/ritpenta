@@ -4,7 +4,7 @@
  * @Author: indran
  * @Date:   2018-10-17 16:48:54
  * @Last Modified by:   indran
- * @Last Modified time: 2018-11-24 16:49:26
+ * @Last Modified time: 2018-11-22 06:45:00
  */
 
 
@@ -55,7 +55,6 @@ $message=array(null,null);
 	<link rel="stylesheet" href="assets/css/datatables.min.css">
 	<link rel="stylesheet" href="assets/css/cropper.min.css">
 
-	<link rel="stylesheet" href="assets/css/lobibox.min.css">
 
 
 
@@ -158,12 +157,8 @@ $message=array(null,null);
 										</a> -->
 									</div>
 								</li>
-								<li class="nav-item dropdown ml-4 notificationNew" id="get-notif">
+								<li class="nav-item dropdown ml-4" id="notificationNew">
 								</li>
-
-								<li class="nav-item dropdown ml-4 notificationNew" id="get-blood-r">
-								</li>
-
 
 								<li class="nav-item dropdown d-none d-xl-inline-block">
 									<a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
@@ -255,38 +250,21 @@ $message=array(null,null);
 											$(document) .ready(function($) {
 
 
-												
-
-												$attid = 'get-notif'; 
-												$.ajax(  { 
-													url: 'admin/includes/notifications.php',
-													method: "POST",
-													data: 'action='+$attid, 
-													success: function (response) {
-
-														$('#get-notif').html( response);
-													},
-													error: function () { 
-
-													}
-												}); 
-
-												$attid = 'get-blood-r'; 
-												$.ajax(  { 
-													url: 'admin/includes/notifications.php',
-													method: "POST",
-													data: 'action='+$attid, 
-													success: function (response) {
-
-														$('#get-blood-r').html( response);
-													},
-													error: function () { 
-
-													}
-												}); 
-
 												// location.href='admin/includes/notifications.php';
-												
+												$.ajax(  { 
+													url: 'admin/includes/notifications.php',
+													method: "POST",
+													data: 'action='+"get-notif", 
+													success: function (response) {
+														console.log(response);
+
+														$('#notificationNew').html( response);
+													},
+													error: function () {
+														alert('notifications error');
+
+													}
+												});
 
 
 
@@ -295,21 +273,3 @@ $message=array(null,null);
 
 
 										</script>
-
-										<?php 
-
-
-										if ($_POST) { 
-											
-											$_SESSION['POST'] =  $_POST; 
-											echo "<script type='text/javascript'>location.href='".$_SERVER['REQUEST_URI']."'</script>";
-											exit();
-										}
-										if (isset($_SESSION ['POST'])) {
-											$_POST = $_SESSION['POST'];
-											unset($_SESSION['POST']);
-										}
-
-
-
-										?>

@@ -11,7 +11,7 @@ function mainTo ($to, $subject , $body) {
 	$to = 'indranspeaks@gmail.com';
 
 	 // include the class name
-	// $to = 'indranspeaks@gmail.com';
+
 	
 			$mail = new PHPMailer(); // create a new object
 			$mail->IsSMTP(); // enable SMTP

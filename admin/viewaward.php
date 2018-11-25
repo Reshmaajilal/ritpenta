@@ -138,6 +138,7 @@ if (isset($_POST['make_delete'])) {
 										<a title="edit" href="admin/editaward/<?php echo indexMe((int)isit('awrd_id', $value, 0)); ?>" class="btn btn-sm btn-warning ">
 											<i class="ti-pencil-alt"></i>
 										</a>
+										
 									</td>
 
 

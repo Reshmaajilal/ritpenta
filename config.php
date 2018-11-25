@@ -1,0 +1,16 @@
+<?php 
+
+$con=new mysqli("localhost","root","","blood_bank");
+if($con->connect_error)
+{
+	echo "Database Connection Failed";
+}
+<?php 
+
+$con=new mysqli("localhost","root","","nss_ db");
+if($con->connect_error)
+{
+	echo "Database Connection Failed";
+}
+
+?>

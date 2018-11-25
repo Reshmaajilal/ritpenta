@@ -31,16 +31,16 @@ include_once('includes/header.php');
 
 
 
-			<div class="card">
-				<div class="card-body"> 
+		<div class="card">
+			<div class="card-body"> 
 
 
 				</br>
-				
-				<center>	<h3 class="h3 mb-3 font-weight-normal danger-text">Regular Activities</h3></center>
-				
+		
+		<center>	<h3 class="h3 mb-3 font-weight-normal danger-text">Regular Activities</h3></center>
+		
 
-			</br>
+</br>
 			
 
 			<div class="table-responsive">
@@ -104,6 +104,7 @@ include_once('includes/header.php');
 									<a title="add" href="volunteer/eventparticipant/<?php echo indexMe((int)isit('event_id', $value, 0)); ?>" class="btn btn-sm btn-primary ">
 										<i class="fas fa-user-plus"></i>
 									</a>
+									
 								</td>
 
 

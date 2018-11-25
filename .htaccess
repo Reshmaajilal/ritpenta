@@ -20,6 +20,11 @@ RewriteRule ^public/brequest$ public/brequest.php [L]
 
 
 
+
+
+
+
+
 # ========================= admin ===========================================================
 RewriteRule ^admin$ admin/dashboard [L] 
 
@@ -121,10 +126,6 @@ RewriteRule ^volunteer/blooddonors$	 volunteer/blooddonors.php [L]
 RewriteRule ^volunteer/brequest$ admin/brequest.php [L] 
 
 #================ ======================================= ==================================
-
-
-
-
 
 
 
